@@ -18,11 +18,11 @@ const Leftside = () => {
 
   return (
     <div>
-        <div className='flex flex-col justify-between w-20 pt-8 border-r h-screen lg:w-80 lg:pl-12'>
+        <div className='flex flex-col justify-between w-20 pt-4 border-r h-screen md:w-32 md:items-end md:pr-4 lg:w-80 lg:pl-12'>
             <div className=''>
-            <ul className='w-full space-y-6 flex flex-col items-center justify-center lg:items-start lg:justify-start'>
+                <ul className='w-full space-y-6 flex flex-col items-center justify-center lg:items-start lg:justify-start'>
                 <li>
-                    <div className='h-9 w-9'>
+                    <div className='h-12 w-12'>
                         <Image src={twitterlogo}/>
                  </div>   
                 </li>
@@ -60,7 +60,7 @@ const Leftside = () => {
                 </li>
                 <li>
                     <div className='flex'>
-                        <BiBookmark className="h-7 w-7lg:h-8 lg:w-8"/>
+                        <BiBookmark className="h-7 w-7 lg:h-8 lg:w-8"/>
                         <div className='hidden lg:flex'>
                     <p className='font-bold pl-2 text-[24px]'>Bookmarks</p>
                     </div>
@@ -107,7 +107,7 @@ const Leftside = () => {
             </ul>
             </div>
 
-            <div className='flex items-center justify-center h-14 mb-8'>
+            <div className='flex justify-center items-center h-14 mb-8'>
 
                 <div className=' rounded-full flex justify-center lg:justify-start shrink-0'>
                     <Image 
@@ -117,11 +117,12 @@ const Leftside = () => {
 
                 <div className='hidden lg:flex   h-full  items-center justify-center pl-4 lg:justify-between w-full'>
                     <div className='flex flex-col'>
-                    <p className='text-[16px] font-bold'>User</p>
+                        <p className='text-[16px] font-bold'>User</p>
                         <p className='text-[16px]'>@username</p>
+                    </div>    
                         <div className='pr-5'>
                             <BsThreeDots className='h-6 w-6'/>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

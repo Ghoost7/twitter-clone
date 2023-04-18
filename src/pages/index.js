@@ -1,5 +1,7 @@
 import Leftside from '@/Components/Leftside'
 import Image from 'next/image'
+import Feed from '@/Components/Feed'
+  
 
 
 
@@ -8,10 +10,11 @@ export default function Home() {
     <main className="">
       <div> 
         {/*LeftSide*/}
-        <div>
+        <div className='flex'>
           <Leftside/>
         </div>
         {/*Feed*/}
+        <div><Feed/></div>
         {/*RightSide*/}
 
       </div>
