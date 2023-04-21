@@ -8,9 +8,9 @@ import Feed from '@/Components/Feed'
 export default function Home() {
   return (
     <main className="">
-      <div> 
+      <div className='flex'> 
         {/*LeftSide*/}
-        <div className='flex'>
+        <div className=''>
           <Leftside/>
         </div>
         {/*Feed*/}

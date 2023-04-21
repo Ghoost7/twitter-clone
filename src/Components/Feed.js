@@ -5,11 +5,13 @@ import Navbar from './Navbar';
 
 const Feed = () => {
   return (
-    <div>
+    <div className='w-screen h-screen mb-12'>
     {/*Navbar*/}
     <Navbar/>
     {/*Input*/}
+    <div className='mt-14'>
     <Input/>
+    </div>
     {/*Posts*/}
     <Post/>
     </div>
