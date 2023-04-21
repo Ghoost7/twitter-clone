@@ -5,15 +5,16 @@ import Navbar from './Navbar';
 
 const Feed = () => {
   return (
-    <div className='w-screen h-screen mb-12'>
+    <div className='w-screen h-screen mb-12 max-w-[40rem] border-r'>
     {/*Navbar*/}
     <Navbar/>
     {/*Input*/}
     <div className='mt-14'>
     <Input/>
     </div>
-    {/*Posts*/}
+    {/*Post*/}
     <Post/>
+    {/*Posts*/}
     </div>
     
   )

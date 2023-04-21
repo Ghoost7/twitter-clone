@@ -10,11 +10,11 @@ export default function Home() {
     <main className="">
       <div className='flex'> 
         {/*LeftSide*/}
-        <div className=''>
+        
           <Leftside/>
-        </div>
+        
         {/*Feed*/}
-        <div><Feed/></div>
+        <Feed/>
         {/*RightSide*/}
 
       </div>

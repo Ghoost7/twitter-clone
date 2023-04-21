@@ -30,7 +30,7 @@ const Leftside = () => {
                     <div className='flex'>
                         <RiHome7Fill className="h-7 w-7 lg:h-8 lg:w-8"/>
                         <div className='hidden lg:flex'>
-                    <p className='font-bold pl-2 text-[24px]'>Home</p>
+                    <p className='pl-2 text-[24px]'>Home</p>
                     </div>
                     </div>
                 </li>
@@ -38,7 +38,7 @@ const Leftside = () => {
                     <div className='flex'>
                         <BsSearch className="h-7 w-7 lg:h-8 lg:w-8"/>
                         <div className='hidden lg:flex'>
-                    <p className='font-bold pl-2 text-[24px]'>Search</p>
+                    <p className='pl-2 text-[24px]'>Search</p>
                     </div>
                     </div>
                 </li>
@@ -46,7 +46,7 @@ const Leftside = () => {
                     <div className='flex'>
                         <FaBell className="h-7 w-7 lg:h-8 lg:w-8"/>
                         <div className='hidden lg:flex'>
-                    <p className='font-bold pl-2 text-[24px]'>Notifications</p>
+                    <p className='pl-2 text-[24px]'>Notifications</p>
                     </div>
                     </div>
                 </li>
@@ -54,7 +54,7 @@ const Leftside = () => {
                     <div className='flex'>
                         <HiOutlineMail className="h-7 w-7lg:h-8 lg:w-8"/>
                         <div className='hidden lg:flex'>
-                    <p className='font-bold pl-2 text-[24px]'>Messages</p>
+                    <p className='pl-2 text-[24px]'>Messages</p>
                     </div>
                     </div>
                 </li>
@@ -62,7 +62,7 @@ const Leftside = () => {
                     <div className='flex'>
                         <BiBookmark className="h-7 w-7 lg:h-8 lg:w-8"/>
                         <div className='hidden lg:flex'>
-                    <p className='font-bold pl-2 text-[24px]'>Bookmarks</p>
+                    <p className='pl-2 text-[24px]'>Bookmarks</p>
                     </div>
                     </div>
                 </li>
@@ -70,7 +70,7 @@ const Leftside = () => {
                     <div className='flex'>
                         <RiFileList2Line className="h-7 w-7lg:h-8 lg:w-8"/>
                         <div className='hidden lg:flex'>
-                    <p className='font-bold pl-2 text-[24px]'>Lists</p>
+                    <p className='pl-2 text-[24px]'>Lists</p>
                     </div>
                     </div>
                 </li>
@@ -78,7 +78,7 @@ const Leftside = () => {
                     <div className='flex'>
                         <HiOutlineUser className="h-7 w-7lg:h-8 lg:w-8"/>
                         <div className='hidden lg:flex'>
-                    <p className='font-bold pl-2 text-[24px]'>Profile</p>
+                    <p className='pl-2 text-[24px]'>Profile</p>
                     </div>
                     </div>
                 </li>
@@ -86,7 +86,7 @@ const Leftside = () => {
                     <div className='flex'>
                         <FaRegCommentDots className="h-7 w-7lg:h-8 lg:w-8"/>
                         <div className='hidden lg:flex'>
-                    <p className='font-bold pl-2 text-[24px]'>More</p>
+                    <p className='pl-2 text-[24px]'>More</p>
                     </div>
                     </div>
                 </li>
