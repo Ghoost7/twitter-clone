@@ -115,16 +115,17 @@ const Leftside = () => {
                     className='rounded-full object-cover w-14 h-14'/>
                 </div>
 
-                <div className='hidden lg:flex   h-full  items-center justify-center pl-4 lg:justify-between w-full'>
+                <div className='hidden lg:flex justify-between  h-full  items-center justify-center pl-4  w-full'>
                     <div className='flex flex-col'>
                         <p className='text-[16px] font-bold'>User</p>
                         <p className='text-[16px]'>@username</p>
-                    </div>    
+                    </div>   
                         <div className='pr-5'>
                             <BsThreeDots className='h-6 w-6'/>
                         
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>
