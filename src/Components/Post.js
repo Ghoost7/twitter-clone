@@ -1,14 +1,20 @@
 import React from 'react';
 import { RiMessage3Fill } from 'react-icons/ri';
 import { AiOutlineClose } from 'react-icons/ai';
+import { BsThreeDots } from 'react-icons/bs';
+import { RiChat1Line } from 'react-icons/ri';
+import { BiRepost } from 'react-icons/bi';
+import { AiOutlineHeart } from 'react-icons/ai';
+import { FiUpload } from 'react-icons/fi';
 import user from "../public/user.png";
 import Image from 'next/image';
-import { BsThreeDots } from 'react-icons/bs';
+
 import cosplay from "../public/cosplay.jpg";
 
 const Post = () => {
   return (
-    <div>
+    <div className='hover:bg-gray-100 ease-out duration-200 pb-4 border-b border-l'>
+
       {/*topic start*/}
 
       <div className='flex'>
@@ -26,6 +32,7 @@ const Post = () => {
       </div>
 
       {/*Post Header*/}
+
       <div className='flex pl-4 pt-4 w-full justify-between pr-6'>
         <div className='flex'>
           <div className='w-14 h-14 flex'>
@@ -54,11 +61,33 @@ const Post = () => {
           </div>              
       </div>
       {/* Image */}
-      <div className='pt-4 rounded-full'>
+      <div className='pt-4 px-6 pl-[5.7rem]'>
         <div className='px-6'>
           <Image src= {cosplay} className='rounded-[1rem] border'/>
         </div>
       </div>
+
+       {/* Post Buttons */}
+       <div className='pl-[5.7rem] pr-6'>
+        <ul className='flex space-x-20 pt-4'>
+          <li className='flex items-center'>
+              <RiChat1Line className='w-6 h-6 shrink-0'/>
+              <p className='pl-2'>142k</p>
+          </li>
+          <li>
+            <BiRepost className='w-6 h-6 shrink-0'/>
+              <p className='pl-2'>25k</p>
+          </li>
+          <li>
+            <AiOutlineHeart className='w-6 h-6 shrink-0'/>
+              <p className='pl-2'>189k</p>
+          </li>
+          <li>
+            <FiUpload className='w-6 h-6 shrink-0'/>
+              <p className='pl-2'>40</p>
+          </li>
+        </ul>
+       </div>
     </div>
   )
 }

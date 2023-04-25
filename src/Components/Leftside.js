@@ -18,7 +18,7 @@ const Leftside = () => {
 
   return (
     <div>
-        <div className='flex flex-col justify-between w-20 pt-4 border-r h-screen md:w-32 md:items-end md:pr-4 lg:w-80 lg:pl-12'>
+        <div className='flex flex-col justify-between w-20 pt-4 h-screen md:w-32 md:items-end md:pr-4 lg:w-80 lg:pl-12'>
             <div className=''>
                 <ul className='w-full space-y-6 flex flex-col items-center justify-center lg:items-start lg:justify-start'>
                 <li>

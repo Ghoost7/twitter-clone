@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 
 const Feed = () => {
   return (
-    <div className='w-screen h-screen mb-12 max-w-[40rem] border-r'>
+    <div className='w-screen mb-12 max-w-[40rem] border-r'>
     {/*Navbar*/}
     <Navbar/>
     {/*Input*/}
