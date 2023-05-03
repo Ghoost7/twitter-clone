@@ -11,7 +11,7 @@ import { TbCalendarTime } from "react-icons/tb"
 
 const Input = () => {
   return (
-    <div className='border-r' >
+    <div className='border-l' >
       <div  className='flex items-center p-4 pt-4'>
         <div className='w-12 h-12 flex'>
       <Image src={user} className='object-cover rounded-full'/>

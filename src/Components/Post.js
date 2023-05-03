@@ -13,7 +13,7 @@ import cosplay from "../public/cosplay.jpg";
 
 const Post = () => {
   return (
-    <div className='hover:bg-gray-100 ease-out duration-200 pb-4 border-b border-l'>
+    <div className='hover:bg-gray-100 ease-out duration-200 pb-4 border-b border-l w-[calc(100vw-6rem)] max-w-[40rem]'>
 
       {/*topic start*/}
 
@@ -69,7 +69,7 @@ const Post = () => {
 
        {/* Post Buttons */}
        <div className='pl-[5.7rem] pr-6'>
-        <ul className='flex space-x-20 pt-4'>
+        <ul className='flex justify-between md:space-x-8 pt-4'>
           <li className='flex items-center'>
               <RiChat1Line className='w-6 h-6 shrink-0'/>
               <p className='pl-2'>142k</p>
