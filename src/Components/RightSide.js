@@ -3,8 +3,6 @@ import React from "react";
 import { BsSearch } from "react-icons/bs";
 import { BsThreeDots } from "react-icons/bs";
 
-import dogecoin from "../assets/dogecoin.png";
-import ethereum from "../assets/ethereum.jpg";
 
 const RightSide = () => {
   return (
@@ -100,7 +98,7 @@ const RightSide = () => {
             {/* First Profile */}
             <div className="flex  w-full pt-4">
               <div className="w-12 h-12">
-                <Image src={dogecoin} />
+               
               </div>
 
               <div className="pl-2.5">
@@ -117,7 +115,7 @@ const RightSide = () => {
           <div className="flex justify-between items-center pt-4">
             <div className="flex  w-full">
               <div className="w-12 h-12 flex">
-                <Image src={ethereum} className="object-cover rounded-full" />
+                
               </div>
 
               <div className="pl-2.5">

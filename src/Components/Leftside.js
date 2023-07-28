@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import twitterlogo from "../public/twitterlogo.png";
 import Image from 'next/image';
 import user from "../public/user.png"
@@ -23,7 +24,9 @@ const Leftside = () => {
                 <ul className='w-full space-y-6 flex flex-col items-center justify-center lg:items-start lg:justify-start'>
                 <li>
                     <div className='h-12 w-12'>
-                        <Image src={twitterlogo}/>
+                        <Image 
+                        src={twitterlogo}
+                        alt='/'/>
                  </div>   
                 </li>
                 <li>
@@ -93,7 +96,9 @@ const Leftside = () => {
 
                 <li>
                     <div className='lg:hidden w-12 h-12 p-3 rounded-full object-cover'>                        
-                     <Image src={tweet} className=''/>  
+                     <Image src={tweet} 
+                     className=''
+                     alt='/'/>  
                      </div>
 
                       <div className='hidden lg:flex w-60 h-14 items-center justify-center'>
@@ -111,11 +116,12 @@ const Leftside = () => {
 
                 <div className=' rounded-full flex justify-center lg:justify-start shrink-0'>
                     <Image 
-                    src={user} 
+                    src={user}
+                    alt=''
                     className='rounded-full object-cover w-14 h-14'/>
                 </div>
 
-                <div className='hidden lg:flex justify-between  h-full  items-center justify-center pl-4  w-full'>
+                <div className='hidden lg:flex lg:justify-between  h-full  items-center justify-center pl-4  w-full'>
                     <div className='flex flex-col'>
                         <p className='text-[16px] font-bold'>User</p>
                         <p className='text-[16px]'>@username</p>

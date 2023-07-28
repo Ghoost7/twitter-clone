@@ -14,7 +14,9 @@ const Input = () => {
     <div className='border-l' >
       <div  className='flex items-center p-4 pt-4'>
         <div className='w-12 h-12 flex'>
-      <Image src={user} className='object-cover rounded-full'/>
+      <Image src={user}
+      alt='/'
+      className='object-cover rounded-full'/>
         </div>
         <div className='pl-4'>
             <input type='text'

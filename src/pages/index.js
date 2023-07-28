@@ -11,7 +11,7 @@ export default function Home() {
         {/*LeftSide*/}
         
           <Leftside/>
-        
+  
         {/*Feed*/}
         <Feed/>
         {/*RightSide*/}
