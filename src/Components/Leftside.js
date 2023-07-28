@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 import twitterlogo from "../public/twitterlogo.png";
 import Image from 'next/image';
@@ -14,8 +14,13 @@ import { HiOutlineUser } from "react-icons/hi";
 import { FaRegCommentDots } from "react-icons/fa";
 import { BsThreeDots } from "react-icons/bs";
 
-
 const Leftside = () => {
+
+const Nav = [Nav, SetNav] = useState(false);
+
+const handleNav = () => {
+    setNav(!Nav);
+};
 
   return (
     <div>
