@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
+import Link from 'next/link';
 import twitterlogo from "../public/twitterlogo.png";
 import Image from 'next/image';
 import user from "../public/user.png"
@@ -16,87 +16,122 @@ import { BsThreeDots } from "react-icons/bs";
 
 const Leftside = () => {
 
-const Nav = [Nav, SetNav] = useState(false);
+const [Nav, SetNav] = useState(false);
 
 const handleNav = () => {
-    setNav(!Nav);
+    SetNav(!Nav);
 };
 
   return (
     <div>
-        <div className='fixed flex flex-col justify-between w-20 pt-4 h-screen md:w-32 md:items-end md:pr-4 lg:w-80 lg:pl-12 lg:ml-20'>
+        <div className='fixed flex flex-col justify-between w-20 pt-4 h-screen md:w-32 md:items-end md:pr-4 lg:w-80 lg:pl-12 '>
             <div className=''>
                 <ul className='w-full space-y-6 flex flex-col items-center justify-center lg:items-start lg:justify-start'>
                 <li>
+                    
                     <div className='h-12 w-12'>
+                       
                         <Image 
                         src={twitterlogo}
                         alt='/'/>
+                   
                  </div>   
                 </li>
+
                 <li>
+                    <Link onClick={handleNav} href="/">
                     <div className='flex'>
+                        
                         <RiHome7Fill className="h-7 w-7 lg:h-8 lg:w-8"/>
                         <div className='hidden lg:flex'>
-                    <p className='pl-2 text-[24px]'>Home</p>
+                    <p className='pl-2 text-[24px]'>Home</p>                    
                     </div>
                     </div>
+                     </Link>
                 </li>
                 <li>
+                    <Link onClick={handleNav} href="/Search">
                     <div className='flex'>
+                    
                         <BsSearch className="h-7 w-7 lg:h-8 lg:w-8"/>
                         <div className='hidden lg:flex'>
                     <p className='pl-2 text-[24px]'>Search</p>
                     </div>
+                    
                     </div>
+                    </Link>
                 </li>
                 <li>
+                    <Link onClick={handleNav} href="/Notifications">
                     <div className='flex'>
+                    
                         <FaBell className="h-7 w-7 lg:h-8 lg:w-8"/>
                         <div className='hidden lg:flex'>
                     <p className='pl-2 text-[24px]'>Notifications</p>
                     </div>
+                    
                     </div>
+                    </Link>
                 </li>
                 <li>
+                    <Link onClick={handleNav} href="/Messages">
                     <div className='flex'>
+                    
                         <HiOutlineMail className="h-7 w-7lg:h-8 lg:w-8"/>
                         <div className='hidden lg:flex'>
                     <p className='pl-2 text-[24px]'>Messages</p>
                     </div>
+                    
                     </div>
+                    </Link>
                 </li>
                 <li>
+                    <Link onClick={handleNav} href="/Bookmarks">
                     <div className='flex'>
+                    
+                        
                         <BiBookmark className="h-7 w-7 lg:h-8 lg:w-8"/>
                         <div className='hidden lg:flex'>
                     <p className='pl-2 text-[24px]'>Bookmarks</p>
                     </div>
+                    
                     </div>
+                    </Link>
                 </li>
                 <li>
+                    <Link onClick={handleNav} href="/Lists">
                     <div className='flex'>
+                    
                         <RiFileList2Line className="h-7 w-7lg:h-8 lg:w-8"/>
                         <div className='hidden lg:flex'>
                     <p className='pl-2 text-[24px]'>Lists</p>
                     </div>
+                    
                     </div>
+                    </Link>
                 </li>
                 <li>
-                    <div className='flex'>
+                    <Link onClick={handleNav} href="/Profile">
+                    <div className='flex'>               
                         <HiOutlineUser className="h-7 w-7lg:h-8 lg:w-8"/>
                         <div className='hidden lg:flex'>
                     <p className='pl-2 text-[24px]'>Profile</p>
                     </div>
+                    
                     </div>
+                    </Link>
                 </li>
                 <li>
+                    <Link onClick={handleNav} href="/">
                     <div className='flex'>
+                    
                         <FaRegCommentDots className="h-7 w-7lg:h-8 lg:w-8"/>
                         <div className='hidden lg:flex'>
                     <p className='pl-2 text-[24px]'>More</p>
                     </div>
+                    
                     </div>
+                    </Link>
                 </li>
 
                 <li>
